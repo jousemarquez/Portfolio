@@ -326,4 +326,39 @@
     body.setAttribute('class', 'psycodelic-theme');
   })
 
+  /**
+   * Form checker
+   */
+  
+  const fields = [
+    { id: 'subject', regex: null, errorMsg: "This field can't be empty" },
+    { id: 'cc', regex: /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/i, errorMsg: 'A valid mail must be set in this field.' },
+    { id: 'message', regex: null, errorMsg: 'This field can be emptied' }
+  ];
+  
+  function addFieldListener(field) {
+    const element = document.querySelector(`#${field.id}`);
+    element.addEventListener('blur', () => {
+      const value = element.value.trim();
+      if (value === '' || (field.regex && !field.regex.test(value))) {
+        element.style.border = '2px solid red';
+  
+        let errorText = element.parentNode.querySelector('span');
+        if (!errorText) {
+          errorText = document.createElement('span');
+          errorText.style.color = 'red';
+          element.parentNode.appendChild(errorText);
+        }
+        errorText.innerText = field.errorMsg;
+      } else {
+        element.style.border = '2px solid green';
+        const errorText = element.parentNode.querySelector('span');
+        if (errorText) {
+          errorText.remove();
+        }
+      }
+    });
+  }
+  
+  fields.forEach(addFieldListener);
 })()
