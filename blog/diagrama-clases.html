@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>UML - Casos prácticos"</title>
+  <meta content="Realizar varios ejemplos prácticas como Diagramas de Clase" name="description">
+  <meta content="diagramas de clase, programacion, entornor, desarrollo, uml" name="keywords">
+  <meta name="revised" content="Sunday, February 3 2023, 7:00pm">
+
+  <!-- Favicons -->
+  <link href="../img/favicon.png" rel="icon">
+  <link href="../img/favicon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="../css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <main id="main">
+
+    <!-- ======= Blog Details ======= -->
+    <div id="blog-details" class="blog-details">
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-8">
+            <h2 class="blog-title">UML Casos Prácticos</h2>
+          </div>
+          <div class="col-lg-12 blog-info">
+            <h3>Post info</h3>
+            <ul>
+              <li><strong>Category</strong>: UML</li>
+              <li><strong>Except</strong>: Class excersises about UML class diagrams generation.</li>
+              <li><strong>Post date</strong>: February 3rd 2023</li>
+              <li><strong>Hashtags</strong>: #html #uml #programming</li>
+            </ul>
+
+            <p>
+              Los diagramas de clases son una herramienta fundamental en el desarrollo de software y en la
+              modelización de sistemas complejos. Su importancia radica en que proporcionan una representación visual
+              y estructurada de las entidades y sus relaciones en un sistema, permitiendo una comprensión clara y
+              concisa de los componentes y su interacción.
+          </p>
+          <p>
+              Los diagramas de clases se componen de objetos que representan entidades en el sistema, conocidos como
+              clases. Cada clase es un modelo abstracto que define atributos y métodos. Los atributos describen las
+              propiedades de la clase y los métodos describen las acciones que pueden ser realizadas.
+          </p>
+          <p>
+              Las clases también pueden estar relacionadas entre sí, lo que permite la representación de la
+              interacción y dependencia entre ellas. Por ejemplo, una clase "Automóvil" puede tener una relación
+              "tiene un" con una clase "Motor".
+          </p>
+          <p>
+              Además, los diagramas de clases también pueden incluir información sobre las restricciones y las
+              multiplicidades en las relaciones entre clases. Por ejemplo, se puede especificar que un automóvil solo
+              puede tener un motor.
+          </p>
+          <p>
+              Los diagramas de clases también son importantes porque ayudan a identificar los componentes relevantes
+              en un sistema y a comprender cómo funcionan juntos. Esto es especialmente útil en proyectos de software
+              grandes y complejos, donde la organización y la claridad son cruciales para una planificación y
+              ejecución exitosas.
+          </p>
+          <p>
+              Además, los diagramas de clases son un punto de referencia útil durante el desarrollo, ya que
+              proporcionan una representación clara y consistente de las entidades y sus relaciones. Esto ayuda a
+              asegurar la coherencia y la integridad de un sistema a medida que evoluciona y crece.
+          </p>
+          <p>
+              En los siguientes bloques mostraremos algunos ejemplos de posibles servicios que precisan de una
+              aplicación, ya sea
+              móvil, escritorio o en otro soporte especial. Para ello hemos desarrollado el diagrama de clases para su
+              mayor entendimiento.
+          </p>
+
+          <p>
+              En los siguientes bloques mostraremos algunos ejemplos de posibles servicios que precisan de una
+              aplicación, ya sea
+              móvil, escritorio o en otro soporte especial. Para ello hemos desarrollado el diagrama de clases para su
+              mayor entendimiento.
+          </p>
+
+          <h3>Ejercicio 1 - Biblioteca</h3>
+          <p>
+              Representa mediante un diagrama de clases la siguiente especificación relacionada con biblioteca:
+          </p>
+          <ol class="tags">
+              <li>Una biblioteca tiene copias de libros.</li>
+              <li>Los libros se caracterizan por su nombre, tipo (novela, teatro, poesía, ensayo), editorial, año y su
+                  autor.</li>
+              <li>Los autores se caracterizan por su nombre, nacionalidad, y fecha de nacimiento.</li>
+              <li>Cada copia tiene un identificador, y puede estar en la biblioteca, prestada, con retraso o en
+                  reparación.</li>
+              <li>Los lectores pueden tener un máximo de 3 libros en préstamo.</li>
+              <li>Cada libro se presta un máximo de 30 días, por cada día de retraso, se impone una "multa" de dos
+                  días sin posibilidad de coger un nuevo libro.</li>
+              <li>Realiza un diagrama de clases y añade los métodos necesarios para realizar el préstamo y devolución
+                  de libros.</li>
+          </ol>
+
+          <div class="container__mxgraph">
+              <div class="mxgraph" style="max-width:100%;border:1px solid transparent;"
+                  data-mxgraph="{&quot;highlight&quot;:&quot;#0000ff&quot;,&quot;nav&quot;:true,&quot;resize&quot;:true,&quot;toolbar&quot;:&quot;zoom layers tags lightbox&quot;,&quot;edit&quot;:&quot;_blank&quot;,&quot;xml&quot;:&quot;&lt;mxfile host=\&quot;app.diagrams.net\&quot; modified=\&quot;2023-02-03T23:05:58.623Z\&quot; agent=\&quot;5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36\&quot; etag=\&quot;4zNE337Jap4KkkNnfGjQ\&quot; version=\&quot;20.8.16\&quot; type=\&quot;google\&quot;&gt;&lt;diagram id=\&quot;C5RBs43oDa-KdzZeNtuy\&quot; name=\&quot;1\&quot;&gt;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&lt;/diagram&gt;&lt;/mxfile&gt;&quot;}">
+              </div>
+          </div>
+
+          <h3>Ejercicio 2 - Empresa</h3>
+          <p>
+              Representa mediante un diagrama de clases la siguiente especificación sobre una empresa:
+          </p>
+          <ol class="tags">
+              <li>Una aplicación necesita almacenar información sobre sus empresas, sus empleados y sus clientes</li>
+              <li>Ambos se caracterizan por su nombre y edad.</li>
+              <li>Los empleados tienen un sueldo bruto, los empleados que son directivos tienen una categoría, así
+                  como un conjunto de empleados subordinados.</li>
+              <li>De los clientes además se necesita conocer su teléfono de contacto</li>
+              <li>La aplicación necesita mostrar los datos de empleados y clientes.</li>
+          </ol>
+
+          <div class="container__mxgraph">
+              <div class="mxgraph" style="max-width:100%;border:1px solid transparent;"
+                  data-mxgraph="{&quot;highlight&quot;:&quot;#0000ff&quot;,&quot;nav&quot;:true,&quot;resize&quot;:true,&quot;toolbar&quot;:&quot;zoom layers tags lightbox&quot;,&quot;edit&quot;:&quot;_blank&quot;,&quot;xml&quot;:&quot;&lt;mxfile host=\&quot;app.diagrams.net\&quot; modified=\&quot;2023-02-03T23:07:18.992Z\&quot; agent=\&quot;5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36\&quot; etag=\&quot;8dx9bEM2S60WgBzhECko\&quot; version=\&quot;20.8.16\&quot; type=\&quot;google\&quot;&gt;&lt;diagram name=\&quot;2\&quot; id=\&quot;R9sEwj1jR3FzErV6E90u\&quot;&gt;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&lt;/diagram&gt;&lt;/mxfile&gt;&quot;}">
+              </div>
+          </div>
+          </div>
+
+          <h3>Ejercicio 3 - Gestión de pedidos</h3>
+          <p>
+              Representa mediante un diagrama de clases la siguiente especificación relacionada con una aplicaciónde
+              gestión de pedidos.
+          </p>
+          <ol class="tags">
+              <li>Dicha aplicación debe guardar la información de los pedidos que realizan sus clientes y la fecha en
+                  que se formalizan.</li>
+              <li>Los pedidos constan habitualmente de varios productos.</li>
+              <li>El coste total del pedido se calcula a partir de los precios individuales de cada producto, así como
+                  de la cantidad e impuestos asociados a cada uno.</li>
+              <li>Es importante mantener información sobre la existencias de cada producto con el fin de poder
+                  informar al cliente si habrá retrasos en la entrega del pedido.</li>
+              <li>El pedido podrá pagarse de una vez en varios pagos.</li>
+              <li>Las formas de pago posible son: Tarjeta de crédito (fecha de caducidad, número, VISA o MasterCard),
+                  efectivo (moneda) o cheque (nombre, entidad bancaria).</li>
+              <li>El pedido podrá estar en uno de los siguientes estados: pendiente, pagado, procesando, enviado y
+                  entregado.</li>
+          </ol>
+
+          <div class="container__mxgraph">
+              <div class="mxgraph" style="max-width:100%;border:1px solid transparent;"
+                  data-mxgraph="{&quot;highlight&quot;:&quot;#0000ff&quot;,&quot;nav&quot;:true,&quot;resize&quot;:true,&quot;toolbar&quot;:&quot;zoom layers tags lightbox&quot;,&quot;edit&quot;:&quot;_blank&quot;,&quot;xml&quot;:&quot;&lt;mxfile host=\&quot;app.diagrams.net\&quot; modified=\&quot;2023-02-03T23:08:17.124Z\&quot; agent=\&quot;5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36\&quot; etag=\&quot;FjRGRvW656nULlTeAeef\&quot; version=\&quot;20.8.16\&quot; type=\&quot;google\&quot;&gt;&lt;diagram name=\&quot;3\&quot; id=\&quot;dW3IVKHdptO3EYfKypHH\&quot;&gt;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&lt;/diagram&gt;&lt;/mxfile&gt;&quot;}">
+              </div>
+          </div>
+          </div>
+
+          <h3>Ejercicio 4 - Matrimonio</h3>
+          <p>
+              Representa mediante un diagrama de clases la siguiente especificación relacionada con una aplicaciónde
+              gestión de pedidos.
+          </p>
+          <ol class="tags">
+              <li>De cada matrimonio se almacena la fecha, el lugar de la celebración y los datos personales (nombre,
+                  apellidos, edad, sexo y domicilio) de los contrayentes.</li>
+              <li>Igualmente se guardan los datos personales de los testigos, y de la autoridad civil (juez o
+                  autoridad municipal) que formaliza el acto.</li>
+          </ol>
+
+
+          <div class="container__mxgraph">
+              <div class="mxgraph" style="max-width:100%;border:1px solid transparent;"
+                  data-mxgraph="{&quot;highlight&quot;:&quot;#0000ff&quot;,&quot;nav&quot;:true,&quot;resize&quot;:true,&quot;toolbar&quot;:&quot;zoom layers tags lightbox&quot;,&quot;edit&quot;:&quot;_blank&quot;,&quot;xml&quot;:&quot;&lt;mxfile host=\&quot;app.diagrams.net\&quot; modified=\&quot;2023-02-03T23:09:21.405Z\&quot; agent=\&quot;5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36\&quot; etag=\&quot;fnqkhW9McWZ_6DbhuVWb\&quot; version=\&quot;20.8.16\&quot; type=\&quot;google\&quot;&gt;&lt;diagram name=\&quot;4\&quot; id=\&quot;JU8_kwNo_QMfvSPkqVGa\&quot;&gt;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&lt;/diagram&gt;&lt;/mxfile&gt;&quot;}">
+              </div>
+          </div>
+          </div>
+
+          <h3>Ejercicio 5 - Agencia de viajes (1) </h3>
+          <p>
+              Representa mediante un diagrama de clases la siguiente especificación relacionada con una aplicaciónde
+              gestión de pedidos.
+          </p>
+          <ol class="tags">
+              <li>La compañía oferta una serie de vuelos para unas fechas concretas y con un número de plazas.</li>
+              <li>La compañía dispone de una flota de aviones con un capacidad que da soporte a los vuelos ofertados.
+              </li>
+              <li>Las personas compran billetes para los vuelos que le interesan. Para emitir el billete es necesario
+                  conocer el nombre, apellidos y edad del pasajero.</li>
+              <li>Los billetes identifican el número de asiento que ocupan.Representa mediante un diagrama de clases
+                  la siguiente especificación relacionada con una aplicaciónde gestión de pedidos.</li>
+          </ol>
+
+          <div class="container__mxgraph">
+              <div class="mxgraph" style="max-width:100%;border:1px solid transparent;"
+                  data-mxgraph="{&quot;highlight&quot;:&quot;#0000ff&quot;,&quot;nav&quot;:true,&quot;resize&quot;:true,&quot;toolbar&quot;:&quot;zoom layers tags lightbox&quot;,&quot;edit&quot;:&quot;_blank&quot;,&quot;xml&quot;:&quot;&lt;mxfile host=\&quot;app.diagrams.net\&quot; modified=\&quot;2023-02-03T23:10:22.325Z\&quot; agent=\&quot;5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36\&quot; etag=\&quot;gfOtFGr4UNGbT0TpT8Sx\&quot; version=\&quot;20.8.16\&quot; type=\&quot;google\&quot;&gt;&lt;diagram name=\&quot;5\&quot; id=\&quot;Af4PVQSgAAAaJ90NAFLA\&quot;&gt;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&lt;/diagram&gt;&lt;/mxfile&gt;&quot;}">
+              </div>
+          </div>
+          </div>
+
+          <h3>Ejercicio 6 - Agencia de viajes (2) </h3>
+          <p>
+              Modifica el programa anterior para que contemple las siguientes especificaciones adicionales:
+          </p>
+          <ol class="tags">
+              <li>Todo vuelo tiene una ciudad y aeropuerto de origen y de destino.</li>
+              <li>Los pasajeros también pueden facturar bultos. El precio varía según su peso.</li>
+              <li>Los aviones tienen una tara máxima permitida.</li>
+          </ol>
+
+          <div class="container__mxgraph">
+              <div class="mxgraph" style="max-width:100%;border:1px solid transparent;"
+                  data-mxgraph="{&quot;highlight&quot;:&quot;#0000ff&quot;,&quot;nav&quot;:true,&quot;resize&quot;:true,&quot;toolbar&quot;:&quot;zoom layers tags lightbox&quot;,&quot;edit&quot;:&quot;_blank&quot;,&quot;xml&quot;:&quot;&lt;mxfile host=\&quot;app.diagrams.net\&quot; modified=\&quot;2023-02-03T23:11:06.527Z\&quot; agent=\&quot;5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36\&quot; etag=\&quot;p8tSvWQLBqpqrq318i8k\&quot; version=\&quot;20.8.16\&quot; type=\&quot;google\&quot;&gt;&lt;diagram name=\&quot;6\&quot; id=\&quot;OXsCsXZVPt9fK61gp67K\&quot;&gt;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&lt;/diagram&gt;&lt;/mxfile&gt;&quot;}">
+              </div>
+          </div>
+          </div>
+
+          <p>
+              En resumen, los diagramas de clases son una herramienta importante en la modelización de sistemas
+              complejos y en el desarrollo de software. Proporcionan una representación clara y estructurada de las
+              entidades y sus relaciones, lo que permite una comprensión clara y concisa de los componentes y su
+              interacción. Esto es esencial para la planificación y ejecución exitosas de proyectos de software
+              grandes y complejos.
+          </p>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div><!-- End Blog Details -->
+
+  </main><!-- End #main -->
+
+  <div class="credits">
+  </div>
+
+  <!-- Vendor JS Files -->
+  <script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="../assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="../assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Main JS File -->
+  <script src="../assets/js/main.js"></script>
+
+</body>
+
+</html>
