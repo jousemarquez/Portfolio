@@ -15,7 +15,7 @@
 /* Estilos para el modo claro */
 body.light-theme {
   --background-color: #f4f4f4;
-  --background-color-opacity: #7eabb8f1;
+  --background-color-opacity: #b9c9cef1;
   --text-color: #000000;
   --heading-color: #062d47;
   --heading-color-2: #070aa2;
@@ -24,19 +24,6 @@ body.light-theme {
   --opacity-color: #f4f4f4aa;
 
 }
-
-/* Estilos para el modo otro */
-body.psycodelic-theme {
-  --background-color: #1d5d12;
-  --background-color-opacity: #1d5d12f4;
-  --text-color: #7ada65;
-  --heading-color: #cafa2a;
-  --heading-color-2: #57fa2a;
-  --link-color: #addc3e;
-  --link-color-hover: #6ca75e;
-  --opacity-color: #cbdacdaa;
-}
-
 
 /*--------------------------------------------------------------
 # General
@@ -71,6 +58,12 @@ body::before {
   }
 }
 
+@media (max-width: 390px) {
+  body::before {
+    background: var(--background-color) url("../img/bg-mobile.jpg") top right no-repeat;
+  }
+}
+
 a {
   color: var(--link-color);
   text-decoration: none;
@@ -81,7 +74,11 @@ a:hover {
   text-decoration: none;
 }
 
-h1,
+
+h1 a {
+  color: var(--text-color) !important;
+}
+
 h2,
 h3,
 h4,
@@ -92,8 +89,7 @@ h6 {
 }
 
 #toggle-button,
-#toggle-button2,
-#toggle-button3 {
+#toggle-button2 {
   margin-left: 25px;
   background-color: transparent;
   border: none;
@@ -101,8 +97,7 @@ h6 {
 }
 
 #toggle-button:hover,
-#toggle-button2:hover,
-#toggle-button3:hover {
+#toggle-button2:hover {
   color: var(--link-color-hover);
 }
 
@@ -192,6 +187,15 @@ h6 {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+}
+
+@media (max-width: 390px) {
+  #header .container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 80vh;
   }
 }
 

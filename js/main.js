@@ -321,11 +321,6 @@
     body.setAttribute('class', 'light-theme');
   })
 
-  document.getElementById('toggle-button3').addEventListener('click', () => {
-    document.documentElement.setAttribute('data-bs-theme', 'light')
-    body.setAttribute('class', 'psycodelic-theme');
-  })
-
   /**
    * Form checker
    */
