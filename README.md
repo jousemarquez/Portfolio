@@ -1,6 +1,5 @@
 <h2 align="center">
   Portfolio Website - v2.0<br/>
-  <a href="https://www.quoromtv.com/" target="_blank">quoromtv.com</a>
 </h2>
 <div align="center">
   <img alt="Demo" src="img/bg.jpg" />
