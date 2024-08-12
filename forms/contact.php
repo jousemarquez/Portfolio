@@ -2,7 +2,7 @@
   require_once __DIR__ . '/vendor/autoload.php';
   use Dotenv\Dotenv;
 
-  $receiving_email_address = $_ENV['MAIL'];
+  
   $php_email_form_path = '../assets/vendor/php-email-form/php-email-form.php';
 
   if (file_exists($php_email_form_path)) {
