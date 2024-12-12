@@ -61,7 +61,7 @@ body::before {
 
 @media (max-width: 390px) {
   body::before {
-    background: var(--background-color) url("../img/bg-mobile.jpg") top right no-repeat;
+    background: var(--background-color) url("../img/bg.jpg") top left no-repeat;
   }
 }
 
@@ -197,7 +197,9 @@ h6 {
     display: flex;
     align-items: center;
     flex-direction: column;
+    justify-content: center;
     height: 80vh;
+    padding: 22px;
   }
 }
 
@@ -341,7 +343,7 @@ h6 {
   }
   
   #header h2 {
-    max-width: 90%;
+    max-width: 100%;
   }
 
   body::before {
