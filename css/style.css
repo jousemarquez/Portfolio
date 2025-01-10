@@ -11,6 +11,7 @@
   --link-color: #c94754;
   --link-color-hover: #f4818d;
   --opacity-color: #ffffffaa;
+  --opacity-gray: #ffffff14;
 }
 
 /* Estilos para el modo claro */
@@ -541,7 +542,7 @@ section .container {
   width: 100%;
   position: relative;
   text-align: center;
-  background: rgba(255, 255, 255, 0.08);
+  background: var(--opacity-gray);
 }
 
 .counts .count-box i {
@@ -614,7 +615,7 @@ section .container {
   display: flex;
   align-items: center;
   padding: 20px;
-  background: var(--background-color-opacity);
+  background: var(--opacity-gray);
   transition: ease-in-out 0.3s;
 }
 
