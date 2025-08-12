@@ -597,9 +597,15 @@ progress {
   content: "— ";
 }
 
-.img-fluid {
+.img-fluid,
+.img-thumbnail {
+  display: block;
   max-width: 100%;
   height: auto;
+}
+
+.img-fluid {
+  object-fit: cover;
 }
 
 .img-thumbnail {
@@ -607,8 +613,7 @@ progress {
   background-color: #fff;
   border: 1px solid var(--bs-border-color);
   border-radius: 0.375rem;
-  max-width: 100%;
-  height: auto;
+  object-fit: cover;
 }
 
 .figure {
