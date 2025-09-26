@@ -71,7 +71,7 @@ body {
 body::before {
   content: "";
   position: fixed;
-  background: url("../img/bg.png") top right no-repeat;
+  background: url("../img/bg.jpg") top right no-repeat;
   background-color: rgba(0, 0, 0, 0.8);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
